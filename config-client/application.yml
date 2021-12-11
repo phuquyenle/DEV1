@@ -2,7 +2,7 @@ user:
   role: Common
 
 welcome:
-  message: Hi there, welcome in 'application.yml' under '/'
+  message: Hi there, welcome in 'application.yml' under '/config-client'
 
 eureka:
   client:

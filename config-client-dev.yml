@@ -1,5 +1,0 @@
-user:
-  role: config-client-dev
-
-welcome:
-  message: Hi there, welcome in 'config-client-dev.yml' under '/'
