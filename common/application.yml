@@ -4,14 +4,29 @@ user:
 welcome:
   message: Hi there, welcome in 'application.yml' under '/common'
 
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:~/test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE
+    username: sa
+    password:
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
+
 eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://service-registry:8761/eureka
+      defaultZone: ${EUREKA_SERVER_ADDRESS}
   instance:
-    hostname: service-registry
     preferIpAddress: true
 
 management:
