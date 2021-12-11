@@ -1,0 +1,5 @@
+user:
+  role: config-client-prod
+
+welcome:
+  message: Hi there, welcome in 'config-client-prod.yml' under '/common'
