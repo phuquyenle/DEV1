@@ -1,0 +1,24 @@
+user:
+  role: Common
+
+welcome:
+  message: Hi there, welcome in 'application.yml' under '/'
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka
+  instance:
+    hostname: service-registry
+    preferIpAddress: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    prometheus:
+      enabled: true
