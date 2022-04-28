@@ -1,0 +1,5 @@
+user:
+  role: config-client
+
+welcome:
+  message: Hi there, welcome in 'application.yml' under 'spring-cloud-microservices/config-client'
